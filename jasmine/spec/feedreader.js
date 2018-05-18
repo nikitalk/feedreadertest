@@ -119,18 +119,16 @@ $(function () {
             nextFeed;
 
         beforeEach(function (done) {
-            loadFeed(0, function () {
-                previousFeed = $('.feed .entry').text();
-                done();
-            });
-
             loadFeed(1, function () {
-                nextFeed = $('.feed .entry').text();
-                done();
+                previousFeed = $('.feed').text();
+                loadFeed(0, function () {
+                    nextFeed = $('.feed').text();
+                    done();
+                });
             });
-
         });
-        it('is loaded', function (done) {
+
+        it('are loaded', function (done) {
             expect(previousFeed).not.toBe(nextFeed);
             done();
         });
