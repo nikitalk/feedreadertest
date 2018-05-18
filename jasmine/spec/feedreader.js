@@ -42,7 +42,7 @@ $(function () {
          * in the allFeeds object and ensures it has a name defined
          * and that the name is not empty.
          */
-        it('Name are defined', function () {
+        it('name are defined', function () {
             for (const feed of allFeeds) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
@@ -72,7 +72,7 @@ $(function () {
          * clicked and does it hide when clicked again.
          */
 
-        it(' changes visibility when the menu icon is clickedt', function () {
+        it('changes visibility when the menu icon is clickedt', function () {
             $('.menu-icon-link').click();
             expect($('body').hasClass('menu-hidden')).toBe(false);
             $('.menu-icon-link').click();
@@ -99,7 +99,7 @@ $(function () {
             });
         });
 
-        it(' has at least a single .entry element within the .feed container', function (done) {
+        it('has at least a single .entry element within the .feed container', function (done) {
             expect($(".feed .entry").length).toBeGreaterThan(0);
             done();
         });
