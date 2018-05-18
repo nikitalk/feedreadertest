@@ -4,7 +4,7 @@ Project for the Udacity Front End Nanodegree program within Google Developer Sch
 
 ## How to Run Appilcation
 
-No installation is needed. Just clone this project or [download](https://github.com/nikitalk/arcadegame/archive/master.zip) and open index.html.
+No installation is needed. Just clone this project or [download](https://github.com/nikitalk/feedreadertest/archive/master.zip) and open index.html.
 
 ## Tests That Were Implemented
 
