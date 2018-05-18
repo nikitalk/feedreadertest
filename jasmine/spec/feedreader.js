@@ -119,10 +119,10 @@ $(function () {
             nextFeed;
 
         beforeEach(function (done) {
-            loadFeed(1, function () {
-                previousFeed = $('.feed').text();
-                loadFeed(0, function () {
-                    nextFeed = $('.feed').text();
+            loadFeed(0, function () {
+                previousFeed = $('.feed').html();
+                loadFeed(1, function () {
+                    nextFeed = $('.feed').html();
                     done();
                 });
             });
